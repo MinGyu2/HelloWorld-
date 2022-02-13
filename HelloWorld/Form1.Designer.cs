@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             this.btClick = new System.Windows.Forms.Button();
             this.lbhello = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btClick
@@ -46,15 +47,24 @@
             this.lbhello.TabIndex = 1;
             this.lbhello.Text = "label1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(330, 21);
+            this.textBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbhello);
             this.Controls.Add(this.btClick);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -64,6 +74,7 @@
 
         private System.Windows.Forms.Button btClick;
         private System.Windows.Forms.Label lbhello;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
